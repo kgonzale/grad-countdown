@@ -1,9 +1,13 @@
 const moment = require('moment');
 
-document.getElementById("countdown").textContent= moment("20190511", "YYYYMMDD").fromNow();
+const now = moment(new Date()); 
+const end = moment("2019-05-11"); 
 
-var a = moment([2007, 05, 11]);
-var b = moment([2007, 05, 23]);
-c = a.diff(b, 'days')
+const weeks = end.diff(now, 'week');
+const days = end.diff(now, 'days');
+const seconds = end.diff(now, 'seconds');
 
-console.log(c)
+
+document.getElementById("days").textContent = Math.floor(days);
+document.getElementById("weeks").textContent = Math.floor(weeks);
+document.getElementById("seconds").textContent = Math.floor(seconds);

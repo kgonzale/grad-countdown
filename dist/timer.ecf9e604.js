@@ -4726,11 +4726,14 @@ var global = arguments[3];
 },{}],"timer.js":[function(require,module,exports) {
 var moment = require('moment');
 
-document.getElementById("countdown").textContent = moment("20190511", "YYYYMMDD").fromNow();
-var a = moment([2007, 05, 11]);
-var b = moment([2007, 05, 23]);
-c = a.diff(b, 'days');
-console.log(c);
+var now = moment(new Date());
+var end = moment("2019-05-11");
+var weeks = end.diff(now, 'week');
+var days = end.diff(now, 'days');
+var seconds = end.diff(now, 'seconds');
+document.getElementById("days").textContent = Math.floor(days);
+document.getElementById("weeks").textContent = Math.floor(weeks);
+document.getElementById("seconds").textContent = Math.floor(seconds);
 },{"moment":"node_modules/moment/moment.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -4759,7 +4762,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64939" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50498" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

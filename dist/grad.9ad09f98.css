@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.add-space {
+    margin: 15px;
+}
+
+/*# sourceMappingURL=/grad.9ad09f98.css.map */
