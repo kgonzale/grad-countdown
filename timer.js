@@ -5,9 +5,19 @@ const end = moment("2019-05-11");
 
 const weeks = end.diff(now, 'week');
 const days = end.diff(now, 'days');
-const seconds = end.diff(now, 'seconds');
+
+const secondsFunction = () => {
+    let now = moment(new Date()); 
+    let end = moment("2019-05-11");
+    return end.diff(now, 'seconds')
+}
 
 
-document.getElementById("days").textContent = Math.floor(days);
-document.getElementById("weeks").textContent = Math.floor(weeks);
-document.getElementById("seconds").textContent = Math.floor(seconds);
+setInterval(() => {
+    const change = secondsFunction();
+    document.getElementById("seconds").textContent = Math.floor(change);
+  }, 1000);
+
+
+document.getElementById("days").textContent = Math.round(days);
+document.getElementById("weeks").textContent = Math.round(weeks);

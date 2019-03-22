@@ -2,11 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 500px;
+    color: red;
 }
 
 .add-space {
     margin: 15px;
+}
+
+html {
+    background-image: url("badumtss.bee1594f.jpg");
+    background-repeat: no-repeat;
+    background-size: 1250px 600px;
 }
 
 /*# sourceMappingURL=/grad.9ad09f98.css.map */
