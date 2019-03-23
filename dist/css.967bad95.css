@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     color: red;
 }
 
@@ -10,8 +10,10 @@
     margin: 15px;
 }
 
-html {
-    background-image: url("./badumtss.jpg");
+image {
+    /* background-image: url("./badumtss.jpg"); */
     background-repeat: no-repeat;
     background-size: 1250px 600px;
 }
+
+/*# sourceMappingURL=/css.967bad95.css.map */
